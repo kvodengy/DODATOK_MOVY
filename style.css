@@ -4,7 +4,7 @@ header{
     width: 100%;
     height: 120px;
 }
-.logo{
+.logoInHeader{
     width: 30%;
     align-items: left;
 }
@@ -19,3 +19,55 @@ header{
     text-align: center;
 
 }
+
+ .backimg{
+    background: url("img/BruredLIbrary.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+
+}
+
+.page05{/*Перша половина головної сторінки*/
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .txtinpage{
+    
+
+
+} */
+
+.logoInPage{
+    width: 30%;
+
+}
+
+.page10{/*Друга половина головної сторінки*/
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.btn{
+    width: 100px;
+    /*безкоштовно*/
+    padding: 15px;
+    background: #FFFF00;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+} 

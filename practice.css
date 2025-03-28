@@ -1,6 +1,89 @@
+@import url('https://fonts.googleapis.com/css2family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 header{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
     background-color: black;
     width: 100%;
+    height: 170px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.exerciseTitle{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #EEFF00;
+    height: 150px;
+}
+
+.lowerText{
+    color: #373737;
+}
+
+.questionCounter{
+    position: absolute;
+    left:50px;
+}
+
+.questionBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: 250px;
+}
+
+.question{
+    border: 1px solid white;
+    border-radius: 70px;
+    background-color: white;
+    height: 40px;
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 15px rgba(255, 255, 255, 0.4);
+}
+
+.translatedAs{
+    color: white;
+}
+
+.answers{
+    text-align: center;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
     height: 200px;
+}
+
+.options{
+    border: 1px solid #EEFF00;
+    border-radius: 70px;
+    background-color: #EEFF00;
+    width: 600px;
+    padding: 20px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.option1{
+    margin-left: 70px;
+}
+
+.option2{
+    position: relative;
+    top: 100px;
+}
+
+.option3{
+    margin-right: 70px;
 }

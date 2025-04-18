@@ -114,8 +114,3 @@ let test = new Language()
 movi.addEventListener("change", function(){
     test.table()
 }, false)
-    ["Flor", "floɾ", "квітка"],
-    ["Yeso", "ˈjeθo", "штукатурка"],
-    ["Pincel", "pinˈθel", "пензель"],
-    ["Cubo", "ˈkuβo", "відро"]
-]

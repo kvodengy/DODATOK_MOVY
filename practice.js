@@ -1,5 +1,7 @@
 let question = document.querySelector(".question")
 let options = document.querySelectorAll(".options")
+let translatedAs = document.querySelector(".translatedAs")
+let question_counterhtml = document.querySelector(".questionCounter")
 
 
 class Question {
@@ -72,12 +74,11 @@ class Question {
 }
 
 let current_question
-let question_counter
-let correct_answers_given
+let question_counter = 1
+let correct_answers_given = 0
 
 current_question = new Question()
 current_question.display()
-question_counter = 0
 
 for(let i = 0; i < options.length; i++){
     options[i].addEventListener("click", function(){
@@ -101,11 +102,14 @@ for(let i = 0; i < options.length; i++){
             question_counter += 1
             current_question.new_question()
             current_question.display()
+            question_counterhtml.innerHTML = `${question_counter}/15`
         }
         else{
             question.innerHTML = "Тест пройдено"
-            for(let i; i<options.length; i++){
+            for(let i = 0; i<options.length; i++){
                 options[i].style.display = "none"
+                translatedAs.innerHTML = `Результат: ${correct_answers_given} із 15`
+                
             }
         }
     })
